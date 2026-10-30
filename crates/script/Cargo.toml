@@ -1,0 +1,32 @@
+[package]
+name = "artixo-effect-script"
+description = "ARTIXO Effect scripting: JavaScript (boa) with an After Effects-style object model (app, project, CompItem, Layer, Property…) over the engine's undoable commands"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+artixo-effect-engine = { workspace = true }
+artixo-effect-project = { workspace = true }
+artixo-effect-keyframe = { workspace = true }
+artixo-effect-time = { workspace = true }
+artixo-effect-render = { workspace = true }
+artixo-effect-path = { workspace = true }
+serde_json = { workspace = true }
+boa_engine = { workspace = true }
+web-time = { workspace = true }
+
+# On the web, boa's clock and Math.random need the browser (getrandom `wasm_js`, web-time).
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+boa_engine = { workspace = true, features = ["js"] }
+
+[dev-dependencies]
+artixo-effect-expr = { workspace = true }
+artixo-effect-psd = { workspace = true }
+
+[target.'cfg(not(target_arch = "wasm32"))'.dev-dependencies]
+socket2 = "0.6"

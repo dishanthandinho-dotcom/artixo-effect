@@ -1,0 +1,8 @@
+asset:        artixo-effect-1024.png
+title:        ARTIXO Effect app icon, 1024 px
+author:       ARTIXO ONE (logo supplied by the project owner)
+source:       original work
+license:      MIT OR Apache-2.0
+license-file: assets/app-icon/LICENSE.txt
+added:        2026-10-30 by V. Dishanthan (ARTIXO ONE)
+notes:        ARTIXO ONE logo (engraved ape with cameras on a pink tile) supplied by the project owner as a 1024 px image; corners keyed to transparency and resized for this format. SVG files embed the PNG raster (not vector-traced).

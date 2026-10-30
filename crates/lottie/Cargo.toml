@@ -1,0 +1,26 @@
+[package]
+name = "artixo-effect-lottie"
+description = "Lottie JSON import and export: compositions, precomps, shape/solid/null/image/text layers, keyframes with temporal and spatial easing, masks, track mattes and a few effects"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+craft-docpath = { workspace = true }
+artixo-effect-time = { workspace = true }
+artixo-effect-color = { workspace = true }
+artixo-effect-keyframe = { workspace = true }
+artixo-effect-project = { workspace = true }
+artixo-effect-path = { workspace = true }
+artixo-effect-text = { workspace = true }
+artixo-effect-effects = { workspace = true }
+kurbo = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+artixo-effect-render = { workspace = true }

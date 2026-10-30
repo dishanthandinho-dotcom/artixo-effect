@@ -1,0 +1,36 @@
+[package]
+name = "artixo-effect-media"
+description = "Footage import: probing, stills, image sequences, video and audio via FilmCraft's pure-Rust codecs, memory-budgeted frame cache"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+craft-docpath = { workspace = true }
+artixo-effect-time = { workspace = true }
+artixo-effect-project = { workspace = true }
+artixo-effect-raster = { workspace = true }
+artixo-effect-render = { workspace = true }
+artixo-effect-psd = { workspace = true }
+artixo-effect-svg = { workspace = true }
+artixo-effect-pdf = { workspace = true }
+artixo-effect-model = { workspace = true }
+filmcraft-codecs = { workspace = true }
+filmcraft-media = { workspace = true }
+filmcraft-isobmff = { workspace = true }
+filmcraft-frame = { workspace = true }
+filmcraft-color = { workspace = true }
+filmcraft-time = { workspace = true }
+# AIFF import (#1428): enables the aiff reader of filmcraft-codecs' symphonia.
+symphonia = { workspace = true }
+exr = { workspace = true }
+gif = { workspace = true }
+image = { workspace = true, features = ["gif", "webp", "tiff", "bmp", "exr", "tga", "hdr"] }
+rayon = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+log = { workspace = true }

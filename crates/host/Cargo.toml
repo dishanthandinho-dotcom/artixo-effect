@@ -1,0 +1,37 @@
+[package]
+name = "artixo-effect-host"
+description = "Builds a fully wired ARTIXO Effect session: media decoding (FilmCraft codecs), importer, the expression engine and scripting"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+artixo-effect-engine = { workspace = true }
+artixo-effect-project = { workspace = true }
+log = { workspace = true }
+artixo-effect-media = { workspace = true }
+artixo-effect-expr = { workspace = true }
+artixo-effect-script = { workspace = true }
+artixo-effect-export = { workspace = true }
+artixo-effect-plugin = { workspace = true }
+
+# WebAssembly effect plug-ins run in wasmi on native builds.
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+artixo-effect-plugin = { workspace = true, features = ["wasm"] }
+
+[dev-dependencies]
+serde_json = { workspace = true }
+artixo-effect-psd = { workspace = true }
+artixo-effect-svg = { workspace = true }
+artixo-effect-pdf = { workspace = true }
+artixo-effect-raster = { workspace = true }
+artixo-effect-time = { workspace = true }
+artixo-effect-interchange = { workspace = true }
+image = { workspace = true }
+gif = { workspace = true }
+exr = { workspace = true }
+rayon = { workspace = true }

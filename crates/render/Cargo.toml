@@ -1,0 +1,28 @@
+[package]
+name = "artixo-effect-render"
+description = "The CPU compositor: property evaluation, layer sources (solids, footage, text, shapes, precomps), masks, effects, track mattes, 2D/3D transforms, motion blur and blending"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+artixo-effect-time = { workspace = true }
+artixo-effect-geom = { workspace = true }
+artixo-effect-color = { workspace = true }
+artixo-effect-keyframe = { workspace = true }
+artixo-effect-project = { workspace = true }
+artixo-effect-raster = { workspace = true }
+artixo-effect-path = { workspace = true }
+artixo-effect-text = { workspace = true }
+artixo-effect-effects = { workspace = true }
+lz4_flex = { version = "0.14", default-features = false, features = ["std", "safe-encode", "safe-decode", "checked-decode"] }
+artixo-effect-model = { workspace = true }
+kurbo = { workspace = true }
+rayon = { workspace = true }
+web-time = { workspace = true }
+serde = { workspace = true }
+log = { workspace = true }

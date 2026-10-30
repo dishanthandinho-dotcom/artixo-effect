@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- AppStream metadata (software centres, Flathub). Template: package.sh and the Flatpak
+     manifest substitute @VERSION@ and @DATE@ from Cargo.toml and the build date. -->
+<component type="desktop-application">
+  <id>com.artixoone.effect</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT OR Apache-2.0</project_license>
+  <name>ARTIXO Effect</name>
+  <summary>Motion graphics and visual effects compositor</summary>
+  <developer id="com.artixoone">
+    <name>ARTIXO ONE</name>
+  </developer>
+  <description>
+    <p>
+      ARTIXO Effect is an open-source motion graphics and visual effects compositor: layers with
+      keyframes and a graph editor, masks and shapes, text animators, expressions, 3D cameras and
+      lights, over 300 effects and a render queue, with GPU compositing.
+    </p>
+  </description>
+  <launchable type="desktop-id">com.artixoone.effect.desktop</launchable>
+  <icon type="stock">com.artixoone.effect</icon>
+  <!-- Only url types known to appstream 0.15 (Ubuntu 22.04, where CI validates): no vcs-browser. -->
+  <url type="homepage">https://artixo-one.vercel.app</url>
+  <url type="bugtracker">https://github.com/dishanthandinho-dotcom/artixo-effect/issues</url>
+  <url type="help">https://github.com/dishanthandinho-dotcom/artixo-effect</url>
+  <url type="contact">https://artixo-one.vercel.app</url>
+  <categories>
+    <category>Graphics</category>
+    <category>RasterGraphics</category>
+    <category>Photography</category>
+  </categories>
+  <keywords>
+    <keyword>photo</keyword>
+    <keyword>image editor</keyword>
+    <keyword>psd</keyword>
+    <keyword>layers</keyword>
+  </keywords>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Demo composition with text layers, timeline and properties</caption>
+      <image type="source">https://raw.githubusercontent.com/dishanthandinho-dotcom/artixo-effect/05955c08b4fd025f1a09882df72e6dbff1a8148a/docs/images/artixo-effect-hero.png</image>
+    </screenshot>
+  </screenshots>
+  <branding>
+    <color type="primary" scheme_preference="light">#9fd0ff</color>
+    <color type="primary" scheme_preference="dark">#1f64ba</color>
+  </branding>
+  <requires>
+    <display_length compare="ge">760</display_length>
+  </requires>
+  <supports>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>tablet</control>
+  </supports>
+  <provides>
+    <binary>artixo-effect</binary>
+  </provides>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="@VERSION@" date="@DATE@"/>
+  </releases>
+</component>

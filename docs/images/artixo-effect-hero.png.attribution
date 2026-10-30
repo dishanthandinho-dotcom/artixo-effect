@@ -1,0 +1,8 @@
+asset:        artixo-effect-hero.png
+title:        ARTIXO Effect main window
+author:       ARTIXO Effect contributors
+source:       original work (headless render of the ARTIXO Effect UI via crates/ui-egui/examples/snapshot.rs)
+license:      MIT OR Apache-2.0
+license-file:
+added:        2026-10-01 by Claude (agent) for Brandon Thomas
+notes:        Screenshot of ARTIXO Effect only, showing procedurally generated demo content from crates/engine/src/demo.rs and built-in effects. ARTIXO Effect main window: the demo composition "ARTIXO Effect Intro" at 0:00:03:00 with the ARTIXO EFFECT text layer selected, Properties panel (Layer Transform, Text, Paragraph, Text Animation), Project panel and Timeline.

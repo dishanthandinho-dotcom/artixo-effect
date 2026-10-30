@@ -1,0 +1,25 @@
+[package]
+name = "artixo-effect-effects"
+description = "Effect registry (specs, parameters, categories) and CPU implementations of the effects library"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+artixo-effect-geom = { workspace = true }
+artixo-effect-color = { workspace = true }
+artixo-effect-keyframe = { workspace = true }
+artixo-effect-project = { workspace = true }
+artixo-effect-raster = { workspace = true }
+artixo-effect-segment = { workspace = true }
+artixo-effect-track = { workspace = true }
+rayon = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+log = { workspace = true }
+chrono = { workspace = true }
+

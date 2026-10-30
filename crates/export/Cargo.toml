@@ -1,0 +1,38 @@
+[package]
+name = "artixo-effect-export"
+description = "Render Queue jobs and output modules: H.264 MP4 (+AAC), ProRes and uncompressed MOV (+PCM) via FilmCraft, HEVC / AV1 MP4 (+AAC) and WebM (VP9 or AV1 + Opus) via ARTIXO Effect encoders, PNG/JPEG/TIFF/EXR sequences, animated GIF, WAV/AIFF"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+artixo-effect-time = { workspace = true }
+artixo-effect-project = { workspace = true }
+artixo-effect-raster = { workspace = true }
+artixo-effect-render = { workspace = true }
+filmcraft-h264enc = { workspace = true }
+filmcraft-prores = { workspace = true }
+filmcraft-aac = { workspace = true }
+filmcraft-isobmff = { workspace = true }
+artixo-effect-opusenc = { workspace = true }
+artixo-effect-vp9enc = { workspace = true }
+artixo-effect-hevcenc = { workspace = true }
+artixo-effect-av1enc = { workspace = true }
+image = { workspace = true, features = ["png", "jpeg", "tiff", "exr"] }
+gif = { workspace = true }
+rayon = { workspace = true }
+web-time = { workspace = true }
+thiserror = { workspace = true }
+log = { workspace = true }
+
+[dev-dependencies]
+artixo-effect-media = { workspace = true }
+artixo-effect-effects = { workspace = true }
+artixo-effect-color = { workspace = true }
+filmcraft-opus = { workspace = true }
+filmcraft-vp9 = { workspace = true }
+artixo-effect-keyframe = { workspace = true }

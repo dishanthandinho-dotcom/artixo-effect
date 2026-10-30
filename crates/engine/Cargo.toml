@@ -1,0 +1,41 @@
+[package]
+name = "artixo-effect-engine"
+description = "The ARTIXO Effect engine: session, undo history, editor state and the command registry every frontend (UI, CLI, control channel, MCP) dispatches through"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+craft-docpath = { workspace = true }
+artixo-effect-time = { workspace = true }
+artixo-effect-geom = { workspace = true }
+artixo-effect-color = { workspace = true }
+artixo-effect-keyframe = { workspace = true }
+artixo-effect-project = { workspace = true }
+artixo-effect-raster = { workspace = true }
+artixo-effect-path = { workspace = true }
+artixo-effect-text = { workspace = true }
+artixo-effect-effects = { workspace = true }
+artixo-effect-render = { workspace = true }
+artixo-effect-segment = { workspace = true }
+artixo-effect-track = { workspace = true }
+artixo-effect-model = { workspace = true }
+artixo-effect-lottie = { workspace = true }
+artixo-effect-interchange = { workspace = true }
+artixo-effect-psd = { workspace = true }
+kurbo = { workspace = true }
+artixo-effect-svg = { workspace = true }
+artixo-effect-pdf = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+log = { workspace = true }
+chrono = { workspace = true }
+rayon = { workspace = true }
+image = { workspace = true }
+web-time = { workspace = true }
+exr = { workspace = true }

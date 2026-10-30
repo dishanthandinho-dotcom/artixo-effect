@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "artixo-effect": {
+      "command": "cargo",
+      "args": ["run", "--quiet", "--release", "-p", "artixo-effect-cli", "--", "mcp", "--demo"]
+    },
+    "artixo-effect-app": {
+      "command": "cargo",
+      "args": ["run", "--quiet", "--release", "-p", "artixo-effect-cli", "--", "mcp", "--bridge", "9877"]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+ARTIXO Effect app icon (artixo-effect.svg, artixo-effect-small.svg and every file derived from
+them in this directory: artixo-effect-1024.png, artixo-effect-macos-512.png, artixo-effect.icns,
+artixo-effect.ico, hicolor/), and the web favicon apps/artixo-effect-web/web/favicon.svg.
+
+The ARTIXO logo is the property of ARTIXO ONE. It is a trademark and is NOT covered by the
+MIT OR Apache-2.0 licence of the source code; see docs/brand/LICENSE-brand.txt.

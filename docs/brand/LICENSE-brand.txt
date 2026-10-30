@@ -1,0 +1,27 @@
+ARTIXO ONE brand assets: licence
+
+The ARTIXO ONE name and the ARTIXO logo (the "ARTIXO Marks"), including every file in this
+directory and the application icons in assets/app-icon/, in every colour, size and format, are
+owned by ARTIXO ONE. They are trademarks and are NOT open source. They are not covered by
+ARTIXO Effect's MIT OR Apache-2.0 licence, and nothing in that licence, in NOTICE or in any
+other file of this repository grants any right to them.
+
+Permission
+
+ARTIXO ONE grants a limited, non-exclusive, non-transferable, revocable, royalty-free permission
+to use the ARTIXO Marks only:
+
+  1. as part of copies of this repository; and
+  2. within ARTIXO Effect itself, its documentation and its official builds, to identify ARTIXO
+     Effect as made by ARTIXO ONE.
+
+Forks and modified versions
+
+If you distribute a modified version of ARTIXO Effect, or any work derived from it, you must remove
+the ARTIXO Marks from it (or replace them with your own) and must not present it as an ARTIXO ONE
+product. You may say, in plain text, that your work is based on ARTIXO Effect by ARTIXO ONE.
+
+Everything else
+
+Any use not expressly permitted here needs prior written permission from ARTIXO ONE.
+All other rights are reserved.
